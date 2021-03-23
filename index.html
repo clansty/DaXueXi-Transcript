@@ -1,0 +1,600 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>青年大学习成绩单生成器</title>
+	<link href="https://service.jiangsugqt.org/youth/static/css/report.css?v=1.0" type="text/css" rel="stylesheet">
+	<link href="https://cdn.bootcdn.net/ajax/libs/limonte-sweetalert2/10.9.0/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="report">
+		<div class="container">
+
+			<div class="header">
+				<img src="https://service.jiangsugqt.org/youth/static/image/header.jpg">
+				<h4>青年大学习成绩单</h4>
+			</div>
+
+			<div class="user-info" onclick="lwChange(true)">
+				<h2><span id="lwName"></span></h2>
+				<h4>用户编号：<span id="lwId"></span></h4>
+				<h4>所在组织：
+					<span id="lwOrg"> 南京信息工程大学团委
+                        - 南信大-计算机与软件学院
+                    </span>
+				</h4>
+			</div>
+
+			<div class="report-table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>期数</th>
+							<th style="width: 6rem">学习状态</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-left">第十一季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第十期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第九期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第八期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第七期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第六期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季 特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季 特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季 特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第十季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季合辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第十三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第十二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第十一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第十期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第九期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第八期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第七期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第六期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第九季五四特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">学习电子书</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第十期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第九期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第八期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第七期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第六期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第八季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季合辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第八期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第七期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第六期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第七季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第六季合辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第六季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">庆祝新中国成立70周年特辑</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第六季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第六季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第六季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第十二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第十一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第十期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第九期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第八期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第七期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第六期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第五季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第七期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第六期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第四季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第三季第五期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第三季第四期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第三季第三期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第三季第二期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第三季第一期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第二季第九期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-left">第二季第八期</td>
+							<td class="text-center">
+								<span class="text-red">已学习</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="download">
+					<h4 class="download-report">下载成绩单</h4>
+					<p>点击生成电子图片证书，可将图片保存后，再发送到电脑端进行打印。</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			以上内容由共青团江苏省委新媒体发展中心提供
+		</footer>
+	</div>
+
+	<script src="https://cdn.bootcdn.net/ajax/libs/limonte-sweetalert2/10.9.0/sweetalert2.min.js"></script>
+	<script>
+		function lwChange(cancel) {
+            Swal.mixin({
+                input: 'text',
+                confirmButtonText: 'Next &rarr;',
+                showCancelButton: cancel,
+                progressSteps: ['1', '2', '3'],
+                allowOutsideClick: cancel,
+                inputValidator: (value) => {
+                    if (!value) {
+                        return 'You need to write something!'
+                    }
+                }
+            }).queue([
+                {
+                    title: '输入姓名',
+                    inputValue: document.getElementById("lwName").innerText,
+                },
+                {
+                    title: '输入编号',
+                    html: '<a href="https://service.jiangsugqt.org/youth/report">点击前往官方页面查询编号</a>',
+                    inputValue: document.getElementById("lwId").innerText,
+                },
+                {
+                    title: '确认组织名',
+                    inputValue: document.getElementById("lwOrg").innerText,
+                }
+            ]).then((result) => {
+                if (result.value) {
+                    document.getElementById("lwName").innerText = result.value[0]
+                    document.getElementById("lwId").innerText = result.value[1]
+                    document.getElementById("lwOrg").innerText = result.value[2]
+					document.title="青年大学习成绩单"
+                }
+            })
+        }
+        lwChange(false)
+	</script>
+
+
+
+
+</body>
+
+</html>
